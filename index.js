@@ -9,7 +9,7 @@ const shopRoutes = require('./routes/shop');
 const app = express();
 
 app.set('view engine', 'ejs');
-app.set('views', 'prove02/views');
+app.set('views', 'views');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
