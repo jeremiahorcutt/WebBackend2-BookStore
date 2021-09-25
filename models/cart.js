@@ -19,6 +19,7 @@ module.exports = class Cart {
       const existingProductIndex = cart.products.findIndex(
         prod => prod.id === id
       );
+    
       const existingProduct = cart.products[existingProductIndex];
       let updatedProduct;
       // Add new product/ increase quantity
