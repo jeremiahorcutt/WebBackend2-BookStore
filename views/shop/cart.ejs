@@ -4,6 +4,7 @@
     <body>
         <%- include('../includes/navigation.ejs') %>
         <main>
+          <h1>Your Cart</h1>
             <% if (products.length > 0) { %>
               <ul>
                   <% products.forEach(p => { %>
@@ -20,4 +21,5 @@
                 <h1>No Products in Cart!</h1>
             <% } %>
         </main>
+        <%- include('../includes/footer.ejs') %>
         <%- include('../includes/end.ejs') %>
