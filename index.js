@@ -3,7 +3,7 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-
+const uri = process.env.MONGODB_URI;
 const errorController = require('./controllers/error');
 const User = require('./models/user');
 
@@ -32,7 +32,7 @@ app.use(shopRoutes);
 
 app.use(errorController.get404);
 
-mongoose.connect('mongodb+srv://GenericReadWrite:mongoman1@cluster0.obb5n.mongodb.net/shop?retryWrites=true&w=majority').then(result => {
+mongoose.connect(uri).then(result => {
   User.findOne().then(user => {
     if(!user) {
       const user = new User({
