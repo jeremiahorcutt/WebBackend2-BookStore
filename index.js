@@ -38,6 +38,7 @@ mongoose.connect(uri).then(result => {
       const user = new User({
         name: 'Jeremiah',
         email: 'jeremiah@test.com',
+        role: 'Admin',
         cart: {
           items: []
         }
