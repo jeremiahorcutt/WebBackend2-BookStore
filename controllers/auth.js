@@ -96,7 +96,7 @@ exports.postSignup = (req, res, next) => {
       res.redirect('/login');
       transporter.sendMail({
         to: email,
-        from: 'shop@byui.edu',
+        from: 'jeremiahorcutt@byui.edu',
         subject: 'Signup successful!',
         html: '<h1>You successfully signed up!</h1>'
       });
