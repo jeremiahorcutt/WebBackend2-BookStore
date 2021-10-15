@@ -208,7 +208,7 @@ exports.postReset = (req, res, next) => {
         subject: 'Password Reset',
         html: `
           <p>You requested a password reset.</p>
-          <p>Click this <a href="https://orcuttwebbackend2bookstore.herokuapp.com/reset/${token}">link to set a new password.</p>
+          <p>Click this <a href="https://orcuttwebbackend2bookstore.herokuapp.com/reset/${token}">link</a> to set a new password.</p>
         `
       });
     })
