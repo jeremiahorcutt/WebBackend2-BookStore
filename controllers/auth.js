@@ -230,7 +230,7 @@ exports.getNewPassword = (req, res, next) => {
   } else {
     message = null;
   }
-  res.render('auth/new-password]', {
+  res.render('auth/new-password', {
     path: '/new-password',
     pageTitle: 'New Password',
     errorMessage: message,
